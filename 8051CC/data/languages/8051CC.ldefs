@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<language_definitions>
+  <language processor="8051CC"
+            endian="big"
+            size="16"
+            variant="default"
+            version="2.0"
+            slafile="8051CC.sla"
+            processorspec="8051CC.pspec"
+		manualindexfile="../manuals/8051CC.idx"
+            id="8051CC:BE:16:default">
+    <description>8051 CC Microcontroller Family</description>
+    <compiler name="default" spec="8051CC.cspec" id="default"/>
+    <external_name tool="IDA-PRO" name="8051CC"/>
+  </language>
+</language_definitions>
