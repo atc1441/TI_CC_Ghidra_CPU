@@ -11,3 +11,7 @@ https://www.ti.com/product/CC1110-CC1111
   Simply copy the "8051CC" folder to <Ghidra>/Ghidra/Processors/
   
   On the next file opening select "8051CC" as "Language"
+
+  
+## Compile with changes use:
+  <Ghidra>/support/sleigh.bat -a <Ghidra>/Ghidra/Processors/8051CC
