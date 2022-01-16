@@ -1,7 +1,7 @@
 # Texas Instruments CCxxxx Ghidra CPU Plugin
 Ghidra Plugin for Texas Instrument CC 8051 core SOC's especially CC1110 and CC2510
 
-This helps to name the default SFR
+This helps to name the default SFR for the standard Peripheral as well as Radio, USB and I2S Register
 
 Example SOC: 
 https://www.ti.com/product/CC2510
