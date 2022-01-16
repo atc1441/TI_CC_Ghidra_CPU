@@ -46,13 +46,14 @@
     <symbol name="BANK3_R6" address="INTMEM:1e"/>
     <symbol name="BANK3_R7" address="INTMEM:1f"/>
   
+	<!-- ####################################################### -->
     <symbol name="P0" address="SFR:80"/>
-    		<symbol name="SP" address="SFR:81"/>
-		    <symbol name="DPL" address="SFR:82"/>
-		    <symbol name="DPH" address="SFR:83"/>
-		    <symbol name="DPL1" address="SFR:84"/>
-		    <symbol name="DPH1" address="SFR:85"/>
-		    <symbol name="U0CSR" address="SFR:86"/>
+    <symbol name="SP" address="SFR:81"/>
+	<symbol name="DPL" address="SFR:82"/>
+	<symbol name="DPH" address="SFR:83"/>
+	<symbol name="DPL1" address="SFR:84"/>
+	<symbol name="DPH1" address="SFR:85"/>
+	<symbol name="U0CSR" address="SFR:86"/>
     <symbol name="PCON" address="SFR:87"/>
 	
     <symbol name="TCON" address="SFR:88"/>
@@ -63,6 +64,7 @@
     <symbol name="P1IEN" address="SFR:8d"/>
     <symbol name="P0INP" address="SFR:8f"/>
 	
+	<!-- ####################################################### -->
     <symbol name="P1" address="SFR:90"/>
     <symbol name="RFIM" address="SFR:91"/>
     <symbol name="DPS" address="SFR:92"/>
@@ -443,9 +445,139 @@
     <symbol name="F8.6" address="BITS:fe"/>
     <symbol name="F8.7" address="BITS:ff"/>
     
+	<!-- RADIO  ####################################################### -->
     <symbol name="SYNC1" address="EXTMEM:df00"/>
     <symbol name="SYNC0" address="EXTMEM:df01"/>
     <symbol name="PKTLEN" address="EXTMEM:df02"/>
+    <symbol name="PKTCTRL1" address="EXTMEM:df03"/>
+    <symbol name="PKTCTRL0" address="EXTMEM:df04"/>
+    <symbol name="ADDR" address="EXTMEM:df05"/>
+    <symbol name="CHANNR" address="EXTMEM:df06"/>
+    <symbol name="FSCTRL1" address="EXTMEM:df07"/>
+    <symbol name="FSCTRL0" address="EXTMEM:df08"/>
+    <symbol name="FREQ2" address="EXTMEM:df09"/>
+    <symbol name="FREQ1" address="EXTMEM:df0a"/>
+    <symbol name="FREQ0" address="EXTMEM:df0b"/>
+    <symbol name="MDMCFG4" address="EXTMEM:df0c"/>
+    <symbol name="MDMCFG3" address="EXTMEM:df0d"/>
+    <symbol name="MDMCFG2" address="EXTMEM:df0e"/>
+    <symbol name="MDMCFG1" address="EXTMEM:df0f"/>
+	
+    <symbol name="MDMCFG0" address="EXTMEM:df10"/>
+    <symbol name="DEVIATN" address="EXTMEM:df11"/>
+    <symbol name="MCSM2" address="EXTMEM:df12"/>
+    <symbol name="MCSM1" address="EXTMEM:df13"/>
+    <symbol name="MCSM0" address="EXTMEM:df14"/>
+    <symbol name="FOCCFG" address="EXTMEM:df15"/>
+    <symbol name="BSCFG" address="EXTMEM:df16"/>
+    <symbol name="AGCCTRL2" address="EXTMEM:df17"/>
+    <symbol name="AGCCTRL1" address="EXTMEM:df18"/>
+    <symbol name="AGCCTRL0" address="EXTMEM:df19"/>
+    <symbol name="FREND1" address="EXTMEM:df1a"/>
+    <symbol name="FREND0" address="EXTMEM:df1b"/>
+    <symbol name="FSCAL3" address="EXTMEM:df1c"/>
+    <symbol name="FSCAL2" address="EXTMEM:df1d"/>
+    <symbol name="FSCAL1" address="EXTMEM:df1e"/>
+    <symbol name="FSCAL0" address="EXTMEM:df1f"/>
+	
+    <symbol name="RESERVED20" address="EXTMEM:df20"/>
+    <symbol name="RESERVED21" address="EXTMEM:df21"/>
+    <symbol name="RESERVED22" address="EXTMEM:df22"/>
+    <symbol name="TEST2" address="EXTMEM:df23"/>
+    <symbol name="TEST1" address="EXTMEM:df24"/>
+    <symbol name="TEST0" address="EXTMEM:df25"/>
+	
+    <symbol name="RESERVED27" address="EXTMEM:df27"/>
+    <symbol name="RESERVED28" address="EXTMEM:df28"/>
+    <symbol name="RESERVED29" address="EXTMEM:df29"/>
+    <symbol name="RESERVED2A" address="EXTMEM:df2a"/>
+    <symbol name="RESERVED2B" address="EXTMEM:df2b"/>
+    <symbol name="RESERVED2C" address="EXTMEM:df2c"/>
+    <symbol name="RESERVED2D" address="EXTMEM:df2d"/>
+    <symbol name="PA_TABLE0" address="EXTMEM:df2e"/>
+    <symbol name="IOCFG2" address="EXTMEM:df2f"/>
+	
+    <symbol name="IOCFG1" address="EXTMEM:df30"/>
+    <symbol name="IOCFG0" address="EXTMEM:df31"/>
+	
+    <symbol name="PARTNUM" address="EXTMEM:df36"/>
+    <symbol name="VERSION" address="EXTMEM:df37"/>
+    <symbol name="FREQEST" address="EXTMEM:df38"/>
+    <symbol name="LQI" address="EXTMEM:df39"/>
+    <symbol name="RSSI" address="EXTMEM:df3a"/>
+    <symbol name="MARCSTATE" address="EXTMEM:df3b"/>
+    <symbol name="PKTSTATUS" address="EXTMEM:df3c"/>
+    <symbol name="VCO_VC_DAC" address="EXTMEM:df3d"/>
+	
+	<!-- RADIO  END ################################################### -->
+	
+	<!-- I2S  ######################################################### -->	
+    <symbol name="I2SCFG0" address="EXTMEM:df40"/>
+    <symbol name="I2SCFG1" address="EXTMEM:df41"/>
+    <symbol name="I2SDATL" address="EXTMEM:df42"/>
+    <symbol name="I2SDATH" address="EXTMEM:df43"/>
+    <symbol name="I2SWCNT" address="EXTMEM:df44"/>
+    <symbol name="I2SSTAT" address="EXTMEM:df45"/>
+    <symbol name="I2SCLKF0" address="EXTMEM:df46"/>
+    <symbol name="I2SCLKF1" address="EXTMEM:df47"/>
+    <symbol name="I2SCLKF2" address="EXTMEM:df48"/>
+	<!-- I2S END ###################################################### -->	
+	
+	
+	<!-- USB  ######################################################### -->
+    <symbol name="USBADDR" address="EXTMEM:de00"/>
+    <symbol name="USBPOW" address="EXTMEM:de01"/>
+    <symbol name="USBIIF" address="EXTMEM:de02"/>
+    <symbol name="RESERVED03" address="EXTMEM:de03"/>
+    <symbol name="USBOIF" address="EXTMEM:de04"/>
+    <symbol name="RESERVED05" address="EXTMEM:de05"/>
+    <symbol name="USBCIF" address="EXTMEM:de06"/>
+    <symbol name="USBIIE" address="EXTMEM:de07"/>
+    <symbol name="RESERVED08" address="EXTMEM:de08"/>
+    <symbol name="USBOIE" address="EXTMEM:de09"/>
+    <symbol name="RESERVED0A" address="EXTMEM:de0a"/>
+    <symbol name="USBCIE" address="EXTMEM:de0b"/>
+    <symbol name="USBFRML" address="EXTMEM:de0c"/>
+    <symbol name="USBFRMH" address="EXTMEM:de0d"/>
+    <symbol name="USBINDEX" address="EXTMEM:de0e"/>
+	
+    <symbol name="USBMAXI" address="EXTMEM:de10"/>
+    <symbol name="USBCS0_USBCSIL" address="EXTMEM:de11"/>
+    <symbol name="USBCSIH" address="EXTMEM:de12"/>
+    <symbol name="USBMAXO" address="EXTMEM:de13"/>
+    <symbol name="USBCSOL" address="EXTMEM:de14"/>
+    <symbol name="USBCSOH" address="EXTMEM:de15"/>
+    <symbol name="USBCNT0_USBCNTL" address="EXTMEM:de16"/>
+    <symbol name="USBCNTH" address="EXTMEM:de17"/>
+	
+    <symbol name="USBF0" address="EXTMEM:de20"/>
+    <symbol name="USBF1" address="EXTMEM:de22"/>
+    <symbol name="USBF2" address="EXTMEM:de24"/>
+    <symbol name="USBF3" address="EXTMEM:de26"/>
+    <symbol name="USBF4" address="EXTMEM:de28"/>
+    <symbol name="USBF5" address="EXTMEM:de2a"/>
+	
+    <symbol name="RESERVED0" address="EXTMEM:de2c"/>
+    <symbol name="RESERVED1" address="EXTMEM:de2d"/>
+    <symbol name="RESERVED2" address="EXTMEM:de2e"/>
+    <symbol name="RESERVED3" address="EXTMEM:de2f"/>
+    <symbol name="RESERVED4" address="EXTMEM:de30"/>
+    <symbol name="RESERVED5" address="EXTMEM:de31"/>
+    <symbol name="RESERVED6" address="EXTMEM:de32"/>
+    <symbol name="RESERVED7" address="EXTMEM:de33"/>
+    <symbol name="RESERVED8" address="EXTMEM:de34"/>
+    <symbol name="RESERVED9" address="EXTMEM:de35"/>
+    <symbol name="RESERVED10" address="EXTMEM:de36"/>
+    <symbol name="RESERVED11" address="EXTMEM:de37"/>
+    <symbol name="RESERVED12" address="EXTMEM:de38"/>
+    <symbol name="RESERVED13" address="EXTMEM:de39"/>
+    <symbol name="RESERVED14" address="EXTMEM:de3a"/>
+    <symbol name="RESERVED15" address="EXTMEM:de3b"/>
+    <symbol name="RESERVED16" address="EXTMEM:de3c"/>
+    <symbol name="RESERVED17" address="EXTMEM:de3d"/>
+    <symbol name="RESERVED18" address="EXTMEM:de3e"/>
+    <symbol name="RESERVED19" address="EXTMEM:de3f"/>
+	<!-- USB  END ##################################################### -->
   </default_symbols>
   
   <default_memory_blocks>
@@ -456,7 +588,8 @@
     <memory_block name="INTMEM" start_address="INTMEM:20" length="0xe0" initialized="false"/>
     <memory_block name="BITS" start_address="BITS:00" bit_mapped_address="INTMEM:20" length="0x80"/>
     <memory_block name="SFR" start_address="SFR:80" length="0x80" initialized="false"/>
-    <memory_block name="RADIO" start_address="EXTMEM:df00" length="0x48" initialized="false"/>
+    <memory_block name="RADIO" start_address="EXTMEM:df00" length="0x3d" initialized="false"/>
+    <memory_block name="I2S" start_address="EXTMEM:df40" length="0x08" initialized="false"/>
     <memory_block name="USB" start_address="EXTMEM:de00" length="0x3f" initialized="false"/>
 	
     <memory_block name="FLASH" start_address="EXTMEM:0000" length="0x7fff" initialized="false"/>
