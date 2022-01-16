@@ -443,6 +443,9 @@
     <symbol name="F8.6" address="BITS:fe"/>
     <symbol name="F8.7" address="BITS:ff"/>
     
+    <symbol name="SYNC1" address="EXTMEM:df00"/>
+    <symbol name="SYNC0" address="EXTMEM:df01"/>
+    <symbol name="PKTLEN" address="EXTMEM:df02"/>
   </default_symbols>
   
   <default_memory_blocks>
@@ -453,6 +456,11 @@
     <memory_block name="INTMEM" start_address="INTMEM:20" length="0xe0" initialized="false"/>
     <memory_block name="BITS" start_address="BITS:00" bit_mapped_address="INTMEM:20" length="0x80"/>
     <memory_block name="SFR" start_address="SFR:80" length="0x80" initialized="false"/>
+    <memory_block name="RADIO" start_address="EXTMEM:df00" length="0x48" initialized="false"/>
+    <memory_block name="USB" start_address="EXTMEM:de00" length="0x3f" initialized="false"/>
+	
+    <memory_block name="FLASH" start_address="EXTMEM:0000" length="0x7fff" initialized="false"/>
+    <memory_block name="Ext_RAM" start_address="EXTMEM:f000" length="0x1000" initialized="false"/>
     
     <!--  BUG: SFR-BITS do not map properly since only every 8th SFR register is mapped (e.g., 0x80, 0x88, 0x90 ... 0xF0, 0xF8) -->
     <memory_block name="SFR-BITS" start_address="BITS:80" bit_mapped_address="SFR:80" length="0x80"/>
